@@ -3,6 +3,7 @@
 use CodeIgniter\Router\RouteCollection;
 
 /**
- * @var RouteCollection $routes
+ * @var RouteC
+ * ollection $routes
  */
-$routes->get('/', 'Home::index');
+$routes->get('/', 'HomeControl::index');

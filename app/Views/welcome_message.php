@@ -202,8 +202,7 @@
 
 <!-- HEADER: MENU + HEROE SECTION -->
 <header>
-
-    <div class="menu">
+<div class="menu">
         <ul>
             <li class="logo">
                 <a href="https://codeigniter.com" target="_blank">
