@@ -6,6 +6,29 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <script src="https://cdn.tailwindcss.com"></script>
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+     <style>
+         html,
+         body {
+             overflow: auto;
+             /* Mengizinkan scrolling */
+             scrollbar-width: none;
+             /* Firefox */
+             -ms-overflow-style: none;
+             /* IE and Edge */
+             scroll-behavior: smooth;
+             margin: 0;
+         }
+
+         html::-webkit-scrollbar,
+         body::-webkit-scrollbar {
+             display: none;
+             background-color: transparent;
+             width: 0;
+             height: 0;
+             /* Safari and Chrome */
+         }
+     </style>
  </head>
 
  <body>
@@ -15,15 +38,15 @@
              <div class="flex justify-between items-center py-4">
                  <!-- Logo -->
                  <div class="text-gray-300 text-2xl font-bold  ">
-                     <a href="#">MyWebsite</a>
+                     <a href="<?= base_url('#') ?>">MyWebsite</a>
                  </div>
 
                  <!-- Menu Items (Hidden on mobile, shown on desktop) -->
                  <div class="hidden md:flex space-x-6">
-                     <a href="#" class="text-gray-300 hover:bg-gray-700 p-2 rounded-md">Home</a>
-                     <a href="#" class="text-gray-300 hover:bg-gray-700 p-2 rounded-md">About</a>
-                     <a href="#" class="text-gray-300 hover:bg-gray-700 p-2 rounded-md">Services</a>
-                     <a href="#" class="text-gray-300 hover:bg-gray-700 p-2 rounded-md">Contact</a>
+                     <a href="<?= base_url('#') ?>" class="text-gray-300 hover:bg-gray-700 p-2 rounded-md">Home</a>
+                     <a href="<?= base_url('#') ?>" class="text-gray-300 hover:bg-gray-700 p-2 rounded-md">About</a>
+                     <a href="<?= base_url('#') ?>" class="text-gray-300 hover:bg-gray-700 p-2 rounded-md">Services</a>
+                     <a href="<?= base_url('#') ?>" class="text-gray-300 hover:bg-gray-700 p-2 rounded-md">Contact</a>
                  </div>
 
                  <!-- Mobile Menu Button -->
@@ -39,10 +62,10 @@
 
          <!-- Mobile Menu (Hidden on desktop) -->
          <div id="mobile-menu" class="md:hidden">
-             <a href="#" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700">Home</a>
-             <a href="#" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700">About</a>
-             <a href="#" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700">Services</a>
-             <a href="#" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700">Contact</a>
+             <a href="<?= base_url('#') ?>" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700">Home</a>
+             <a href="<?= base_url('#') ?>" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700">About</a>
+             <a href="<?= base_url('#') ?>" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700">Services</a>
+             <a href="<?= base_url('#') ?>" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700">Contact</a>
          </div>
      </nav>
      <?= $this->renderSection('section') ?>

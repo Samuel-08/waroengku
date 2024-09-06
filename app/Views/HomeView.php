@@ -97,15 +97,62 @@
     <h2 class="text-2xl font-semibold mb-4">Card Image</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div class="bg-gray-100 p-4 rounded-lg shadow-lg">
-            <img src="./image/th-53735346.jpg" alt="Image 1" class="w-full h-auto rounded-lg mb-4">
+            <img src="<?= base_url('./image/th-53735346.jpg') ?>" alt="Image 1" class="w-full h-auto rounded-lg mb-4">
             <p class="text-gray-700">Deskripsi gambar 1.</p>
         </div>
         <div class="bg-gray-100 p-4 rounded-lg shadow-lg">
-            <img src="./image/th-80222752.jpg" alt="Image 2" class="w-full h-auto rounded-lg mb-4">
+            <img src="<?= base_url('./image/th-80222752.jpg') ?>" alt="Image 2" class="w-full h-auto rounded-lg mb-4">
             <p class="text-gray-700">Deskripsi gambar 2.</p>
         </div>
     </div>
 </div>
 
+<script>
+    // Toggle Mobile Menu
+    $(document).ready(function() {
+        $('#mobile-menu-button').on('click', function() {
+            $('#mobile-menu').toggleClass('hidden');
+        });
+    });
+    // Accordion
+    $(document).ready(function() {
+        $('.accordion button').on('click', function() {
+            // Tutup accordion yang lain
+            $('.accordion-content').not($(this).next()).slideUp().addClass('hidden');
 
+            // Toggle accordion yang diklik
+            $(this).next().slideToggle().toggleClass('hidden');
+        });
+    });
+    //  Smooth Scroll for Anchor Links
+    $(document).ready(function() {
+        $('a[href*="#"]').on('click', function(e) {
+            e.preventDefault();
+
+            $('html, body').animate({
+                scrollTop: $($(this).attr('href')).offset().top
+            }, 500);
+        });
+    });
+    // Form Validation
+    $(document).ready(function() {
+        $('form').on('submit', function(e) {
+            var isValid = true;
+
+            $('input, textarea').each(function() {
+                if ($(this).val() === '') {
+                    isValid = false;
+                    $(this).addClass('border-red-500');
+                } else {
+                    $(this).removeClass('border-red-500');
+                }
+            });
+
+            if (!isValid) {
+                e.preventDefault();
+                alert('Semua field harus diisi!');
+            }
+        });
+    });
+</script>
 <?= $this->endSection(); ?>
