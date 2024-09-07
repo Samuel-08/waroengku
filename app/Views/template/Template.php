@@ -68,7 +68,10 @@
              <a href="<?= base_url('#') ?>" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700">Contact</a>
          </div>
      </nav>
+
      <?= $this->renderSection('section') ?>
+
+
      <script>
          // Toggle Mobile Menu
          $(document).ready(function() {
