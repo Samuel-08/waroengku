@@ -69,13 +69,24 @@
          </div>
      </nav>
      <?= $this->renderSection('section') ?>
-
      <script>
+         // Toggle Mobile Menu
          $(document).ready(function() {
              $("#mobile-menu-button").on("click", function() {
                  var expanded = $(this).attr("aria-expanded") === "true" || false;
                  $(this).attr("aria-expanded", !expanded);
                  $("#mobile-menu").slideToggle(300);
+             });
+         });
+
+         //  Smooth Scroll for Anchor Links
+         $(document).ready(function() {
+             $('a[href*="#"]').on('click', function(e) {
+                 e.preventDefault();
+
+                 $('html, body').animate({
+                     scrollTop: $($(this).attr('href')).offset().top
+                 }, 800);
              });
          });
      </script>
