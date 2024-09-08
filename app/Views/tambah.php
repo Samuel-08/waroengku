@@ -1326,54 +1326,203 @@
     <main class="p-4 md:ml-64 h-auto pt-20">
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
         <div
-          class="border-2 border-dashed border-gray-300 rounded-lg dark:border-gray-600 h-32 md:h-64"
-        > <h1>oke-1</h1></div>
+          class="border-2 p-5 text-center flex flex-col items-center justify-center bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 h-32 md:h-64"
+        ><h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">90%</h5>
+<p class="font-normal text-gray-700 dark:text-gray-400">Keuntungan Hari Ini</p>
+</div>
         <div
-          class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-32 md:h-64"
-        ><h1>oke-2</h1></div>
+          class="border-2 p-5 text-center flex flex-col items-center justify-center bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 h-32 md:h-64"
+        ><h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">10%</h5>
+<p class="font-normal text-gray-700 dark:text-gray-400">Pengeluaran Bulan Ini</p>
+</div>
+
         <div
-          class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-32 md:h-64"
-   ><h1>oke-3</h1></div>
+          class="border-2 p-5 text-center flex flex-col items-center justify-center bg-white  rounded-lg  dark:border-gray-600 h-32 md:h-64"
+        ><h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">11%</h5>
+<p class="font-normal text-gray-700 dark:text-gray-400">Pengeluaran Bulan Ini</p></div>
         <div
-          class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-32 md:h-64"
-        ><h1>oke-4</h1></div>
+          class="border-2 p-5 text-center flex flex-col items-center justify-center bg-white rounded-lg  dark:border-gray-600 h-32 md:h-64"
+        ><h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">13%</h5>
+<p class="font-normal text-gray-700 dark:text-gray-400">Pengeluaran Bulan Ini</p></div>
       </div>
+
+      <!-- Using form state modifiers, the classes can be identical for every input -->
       <div
-        class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-96 mb-4"
-      ><h1>oke-5</h1></div>
+        class="border-2 bg-white p-4 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-96 mb-4"
+      >
+<form>
+  <label class="block">
+    <span class="block text-sm font-medium text-slate-700">User Register</span>
+    <input type="text" placeholder="Your Username" class="my-4 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
+      disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
+      invalid:border-pink-500 invalid:text-pink-600
+      focus:invalid:border-pink-500 focus:invalid:ring-pink-500
+    "/>
+    <input type="text" placeholder="Your Product" class="my-4 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
+      disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
+      invalid:border-pink-500 invalid:text-pink-600
+      focus:invalid:border-pink-500 focus:invalid:ring-pink-500
+    "/>
+    <input type="text" placeholder="Your Age" class="my-4 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
+      disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
+      invalid:border-pink-500 invalid:text-pink-600
+      focus:invalid:border-pink-500 focus:invalid:ring-pink-500
+    "/>
+    <button class="my-1 block w-full px-3 py-2 bg-green-400 border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500">Simpan</button>
+  </label>
+  <!-- ... -->
+</form>
+</div>
       <div class="grid grid-cols-2 gap-4 mb-4">
+
+      <div
+          class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"
+        > <h1>lorem lg-1</h1>
+
+
+    </div>
         <div
           class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"
-        ><h1>oke-6</h1></div>
+        ><h1>lorem md-2</h1></div>
         <div
           class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"
-        ><h1>oke-7</h1></div>
+        ><h1>lorem md-3</h1></div>
         <div
           class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"
-        ><h1>oke-8</h1></div>
-        <div
-          class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"
-        ><h1>oke-9</h1></div>
+        ><h1>lorem md-4</h1></div>
       </div>
       <div
         class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-96 mb-4"
-      ><h1>oke-10</h1></div>
+      ><h1>lorem lg-2</h1></div>
       <div class="grid grid-cols-2 gap-4">
         <div
           class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"
-        ><h1>oke-11</h1></div>
+        ><h1>lorem md-5</h1></div>
         <div
           class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"
-        ><h1>oke-12</h1></div>
+        ><h1>lorem md-6</h1></div>
         <div
           class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"
-        ><h1>oke-13</h1></div>
+        ><h1>lorem md-7</h1></div>
         <div
           class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"
-        ><h1>oke-14</h1></div>
+        ><h1>lorem md-8</h1></div>
       </div>
     </main>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+  <script>
+const options = {
+  colors: ["#1A56DB", "#FDBA8C"],
+  series: [
+    {
+      name: "Organic",
+      color: "#1A56DB",
+      data: [
+        { x: "Mon", y: 231 },
+        { x: "Tue", y: 122 },
+        { x: "Wed", y: 63 },
+        { x: "Thu", y: 421 },
+        { x: "Fri", y: 122 },
+        { x: "Sat", y: 323 },
+        { x: "Sun", y: 111 },
+      ],
+    },
+    {
+      name: "Social media",
+      color: "#FDBA8C",
+      data: [
+        { x: "Mon", y: 232 },
+        { x: "Tue", y: 113 },
+        { x: "Wed", y: 341 },
+        { x: "Thu", y: 224 },
+        { x: "Fri", y: 522 },
+        { x: "Sat", y: 411 },
+        { x: "Sun", y: 243 },
+      ],
+    },
+  ],
+  chart: {
+    type: "bar",
+    height: "320px",
+    fontFamily: "Inter, sans-serif",
+    toolbar: {
+      show: false,
+    },
+  },
+  plotOptions: {
+    bar: {
+      horizontal: false,
+      columnWidth: "70%",
+      borderRadiusApplication: "end",
+      borderRadius: 8,
+    },
+  },
+  tooltip: {
+    shared: true,
+    intersect: false,
+    style: {
+      fontFamily: "Inter, sans-serif",
+    },
+  },
+  states: {
+    hover: {
+      filter: {
+        type: "darken",
+        value: 1,
+      },
+    },
+  },
+  stroke: {
+    show: true,
+    width: 0,
+    colors: ["transparent"],
+  },
+  grid: {
+    show: false,
+    strokeDashArray: 4,
+    padding: {
+      left: 2,
+      right: 2,
+      top: -14
+    },
+  },
+  dataLabels: {
+    enabled: false,
+  },
+  legend: {
+    show: false,
+  },
+  xaxis: {
+    floating: false,
+    labels: {
+      show: true,
+      style: {
+        fontFamily: "Inter, sans-serif",
+        cssClass: 'text-xs font-normal fill-gray-500 dark:fill-gray-400'
+      }
+    },
+    axisBorder: {
+      show: false,
+    },
+    axisTicks: {
+      show: false,
+    },
+  },
+  yaxis: {
+    show: false,
+  },
+  fill: {
+    opacity: 1,
+  },
+}
+
+if(document.getElementById("column-chart") && typeof ApexCharts !== 'undefined') {
+  const chart = new ApexCharts(document.getElementById("column-chart"), options);
+  chart.render();
+}
+
+  </script>
 </body>
 </html>

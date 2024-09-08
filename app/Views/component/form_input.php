@@ -26,7 +26,7 @@
     </button>
 </form>
 </div>
-<!-- Form Input V1 -->
+<!-- Form Input V2 -->
    <div class="mt-8 bg-white p-6 rounded-lg shadow-lg transition-all transform  ">
       <h2 class="text-2xl font-semibold mb-4">Form Input</h2>
       <form class="max-w-sm mx-auto">
