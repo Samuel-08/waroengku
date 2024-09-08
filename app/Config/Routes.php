@@ -7,3 +7,4 @@ use CodeIgniter\Router\RouteCollection;
  * ollection $routes
  */
 $routes->get('/', 'HomeControl::index');
+$routes->get('/produk', 'HomeControl::produk');

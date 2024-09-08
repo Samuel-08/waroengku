@@ -1,0 +1,479 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Smooth Scrolling */
+html, body {
+    overflow: auto;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
+
+/* Heading Styles */
+h1 {
+    text-align: center;
+    color: #0a4d4d;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+/* Search Form Styles */
+.search-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.search-container form {
+    display: flex;
+    width: 100%;
+}
+
+.search-container input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #0a4d4d;
+    border-radius: 5px 0 0 5px;
+    font-size: 1.1em;
+    transition: border-color 0.3s ease;
+}
+
+.search-container input[type="text"]:focus {
+    border-color: #0aa5aa;
+    outline: none;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #0a4d4d;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.search-container button:hover {
+    background-color: #0aa5aa;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-spacing: 0;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #0a4d4d;
+    color: #ffffff;
+    font-size: 1.2em;
+}
+
+tbody {
+    color: #333;
+}
+
+th, td {
+    padding: 16px;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+tbody tr:hover {
+    background-color: #0aa5aa;
+    color: #ffffff;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+td img {
+    max-width: 215px;
+    max-height: 115px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+td img:hover {
+    transform: scale(1.05);
+}
+
+.aksi {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.8rem;
+}
+
+caption {
+    text-align: center;
+    font-weight: bold;
+    color: #0a4d4d;
+    padding: 15px;
+    font-size: 1.4em;
+}
+
+/* Pagination Styles */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.pagination a {
+    color: #0a4d4d;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.pagination a:hover {
+    background-color: #0aa5aa;
+    color: #ffffff;
+}
+
+/* Button Styles */
+.btn {
+    padding: 8px 16px;
+    margin: 5px;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn.detail {
+    background-color: #0a4d4d;
+}
+
+.btn.edit {
+    background-color: #ffaa00;
+}
+
+.btn.delete {
+    background-color: #d9534f;
+}
+
+.btn:hover {
+    opacity: 0.85;
+}
+
+.btn.detail:hover {
+    background-color: #0aa5aa;
+}
+
+.btn.edit:hover {
+    background-color: #ffc107;
+}
+
+.btn.delete:hover {
+    background-color: #ff5c5c;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    table {
+        width: 100%;
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling on touch devices */
+    }
+
+    th, td {
+        padding: 12px;
+        font-size: 1em;
+        display: block;
+        text-align: left;
+        position: relative;
+    }
+
+    th::before, td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding: 10px;
+        font-weight: bold;
+        background: #f4f7f6;
+        color: #0a4d4d;
+        box-shadow: inset 0 -1px 0 #e0e0e0;
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    td::before {
+        content: "";
+    }
+
+    td {
+        padding-left: 50%;
+        position: relative;
+    }
+
+    caption {
+        font-size: 1em;
+    }
+
+    .search-container input[type="text"], .search-container button {
+        font-size: 1em;
+    }
+
+    td a, td form.inline-form {
+        flex-basis: 100%;
+        margin-bottom: 10px;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+}  
+
+/* Responsif untuk perangkat kecil */
+@media screen and (max-width: 768px) {
+    table {
+        display: block;
+        overflow-x: hidden;
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling on touch devices */
+    }
+
+    thead {
+        display: block;
+    }
+
+    tbody {
+        display: block;
+        max-height: 400px; /* Batasan tinggi dengan scroll jika perlu */
+        overflow-y: auto;
+        overflow-x: hidden;
+        
+    }
+
+    tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    th, td {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        font-size: 0.9em;
+        text-align: left;
+    }
+
+    th::before, td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        color: #0a4d4d;
+        background: #f4f7f6;
+        padding: 5px;
+        border-bottom: 1px solid #e0e0e0;
+        display: none;
+    }
+
+    th::before {
+        display: none; /* Tidak menampilkan label header */
+    }
+
+    td {
+        padding-left: 50%; /* Memberi ruang untuk label */
+        position: relative;
+    }
+
+    caption {
+        font-size: 1em;
+        text-align: center; /* Perataan tengah caption */
+    }
+
+    .search-container input[type="text"], .search-container button {
+        font-size: 1em;
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+
+
+ /* Responsif Design untuk Perangkat Kecil */
+@media screen and (max-width: 480px) {
+    table {
+        width: 100%;
+        display: block;
+        overflow-x: hidden;
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling on touch devices */
+
+    }
+
+    thead, tbody {
+        display: block;
+    }
+
+    tbody {
+        max-height: 400px;
+        overflow-y: auto;
+    }
+
+    tr {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid #e0e0e0;
+        margin-bottom: 10px;
+    }
+
+    th, td {
+        display: grid;
+        grid-template-columns: 1fr 2fr; /* Adjust as necessary */
+        padding: 12px;
+        font-size: 1em;
+        text-align: center;
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    th::before {
+        display: none; /* Tidak perlu label untuk header tabel */
+    }
+
+    td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        color: #0a4d4d;
+        background: #a31ebe;
+        padding: 5px;
+        display: none;
+        font-size: 0.9em;
+        text-align: left;
+    }
+
+    caption {
+        font-size: 1em;
+        padding: 10px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .search-container {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .search-container input[type="text"], 
+    .search-container button {
+        font-size: 1em;
+        width: 100%;
+        box-sizing: border-box; /* Ensure padding and border are included in width */
+    }
+
+    .search-container button {
+        background-color: #007bff; /* Primary color for buttons */
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 1em;
+        margin-top: 5px;
+    }
+
+    .search-container button:hover {
+        background-color: #0056b3; /* Darker shade for hover */
+    }
+
+    .btn {
+        max-width: 84vw;
+        text-align: center;
+        padding: 8px;
+        font-size: 1em;
+        border: none;
+        cursor: pointer;
+    }
+
+    .btn.detail {
+        background-color: #28a745; /* Green for detail button */
+        color: white;
+    }
+
+    .btn.edit {
+        background-color: #ffc107; /* Yellow for edit button */
+        color: black;
+    }
+
+    .btn.delete {
+        background-color: #dc3545; /* Red for delete button */
+        color: white;
+    }
+
+    .btn:hover {
+        opacity: 0.8; /* Add some transparency on hover */
+    }
+
+    .inline-form {
+        display: inline;
+        margin: 0;
+    }
+
+    .pagination {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .pagination a {
+        padding: 10px;
+        margin: 0 5px;
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    .pagination a:hover {
+        /* Darker shade for hover */
+          background-color: #0056b3;  
+    }
+}

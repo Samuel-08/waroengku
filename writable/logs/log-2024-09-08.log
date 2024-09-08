@@ -1,0 +1,95 @@
+CRITICAL - 2024-09-08 03:34:53 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "componet/form_input.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('componet/form_input.php')
+ 2 SYSTEMPATH\View\View.php(487): CodeIgniter\View\View->render('componet/form_input', null, true)
+ 3 APPPATH\Views\HomeView.php(6): CodeIgniter\View\View->include('componet/form_input')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\Users\\Sam-Sam\\Documents\\Basic Coding\\waroengku\\app\\Views\\HomeView.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('HomeView', [], true)
+ 7 APPPATH\Controllers\HomeControl.php(16): view('HomeView', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeControl->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeControl))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Sam-Sam\\Documents\\Basic Coding\\waroengku\\public\\index.php')
+CRITICAL - 2024-09-08 05:58:13 --> ErrorException: Undefined variable $dataProduk
+[Method: GET, Route: produk]
+in APPPATH\Views\produk.php on line 2.
+ 1 APPPATH\Views\produk.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dataProduk', 'C:\\Users\\Sam-Sam\\Documents\\Basic Coding\\waroengku\\app\\Views\\produk.php', 2)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\Sam-Sam\\Documents\\Basic Coding\\waroengku\\app\\Views\\produk.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('produk', [], true)
+ 5 APPPATH\Controllers\HomeControl.php(24): view('produk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeControl->produk()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeControl))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Sam-Sam\\Documents\\Basic Coding\\waroengku\\public\\index.php')
+CRITICAL - 2024-09-08 10:48:26 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: produk]
+in APPPATH\Views\produk.php on line 40.
+ 1 APPPATH\Views\produk.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\Users\\Sam-Sam\\Documents\\Basic Coding\\waroengku\\app\\Views\\produk.php', 40)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\Sam-Sam\\Documents\\Basic Coding\\waroengku\\app\\Views\\produk.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('produk', [], true)
+ 5 APPPATH\Controllers\HomeControl.php(24): view('produk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeControl->produk()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeControl))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Sam-Sam\\Documents\\Basic Coding\\waroengku\\public\\index.php')
+CRITICAL - 2024-09-08 10:49:08 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: produk]
+in APPPATH\Views\produk.php on line 42.
+ 1 APPPATH\Views\produk.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\Users\\Sam-Sam\\Documents\\Basic Coding\\waroengku\\app\\Views\\produk.php', 42)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\Sam-Sam\\Documents\\Basic Coding\\waroengku\\app\\Views\\produk.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('produk', [], true)
+ 5 APPPATH\Controllers\HomeControl.php(24): view('produk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeControl->produk()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeControl))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Sam-Sam\\Documents\\Basic Coding\\waroengku\\public\\index.php')
+CRITICAL - 2024-09-08 11:31:52 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "p (2).jpg"
+[Method: GET, Route: assets/image/p%20%282%29.jpg]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('assets/image/p (2).jpg')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('assets/image/p (2).jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Sam-Sam\\Documents\\Basic Coding\\waroengku\\public\\index.php')
+CRITICAL - 2024-09-08 11:31:54 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "p (2).jpg"
+[Method: GET, Route: assets/image/p%20%282%29.jpg]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('assets/image/p (2).jpg')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('assets/image/p (2).jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Sam-Sam\\Documents\\Basic Coding\\waroengku\\public\\index.php')
+CRITICAL - 2024-09-08 12:47:36 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "p (2).jpg"
+[Method: GET, Route: assets/image/p%20%282%29.jpg]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('assets/image/p (2).jpg')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('assets/image/p (2).jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Sam-Sam\\Documents\\Basic Coding\\waroengku\\public\\index.php')
